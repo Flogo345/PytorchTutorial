@@ -2,8 +2,8 @@ import os
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from torch.autograd import Variable
 import torch.optim as optim
+from torch.autograd import Variable
 
 class MeinNetz(nn.Module):
     def __init__(self):
@@ -22,7 +22,6 @@ class MeinNetz(nn.Module):
         for i in size:
             num *= i
         return num
-
 
 
 if os.path.isfile('meinNetz.pt'):

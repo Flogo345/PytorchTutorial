@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>6f01265f-a5cd-4a79-84dc-516137e21546</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>PytorchTutorial.py</StartupFile>
+    <StartupFile>mnist.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,10 +22,31 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="mnist.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="PytorchTutorial.py" />
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="CondaEnv|CondaEnv|Miniconda3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="data\" />
+    <Folder Include="data\MNIST\" />
+    <Folder Include="data\MNIST\processed\" />
+    <Folder Include="data\MNIST\raw\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="data\MNIST\processed\test.pt" />
+    <Content Include="data\MNIST\processed\training.pt" />
+    <Content Include="data\MNIST\raw\t10k-images-idx3-ubyte" />
+    <Content Include="data\MNIST\raw\t10k-images-idx3-ubyte.gz" />
+    <Content Include="data\MNIST\raw\t10k-labels-idx1-ubyte" />
+    <Content Include="data\MNIST\raw\t10k-labels-idx1-ubyte.gz" />
+    <Content Include="data\MNIST\raw\train-images-idx3-ubyte" />
+    <Content Include="data\MNIST\raw\train-images-idx3-ubyte.gz" />
+    <Content Include="data\MNIST\raw\train-labels-idx1-ubyte" />
+    <Content Include="data\MNIST\raw\train-labels-idx1-ubyte.gz" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>6f01265f-a5cd-4a79-84dc-516137e21546</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>mnist.py</StartupFile>
+    <StartupFile>catsanddogs.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,6 +22,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="catsanddogs.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="mnist.py">
       <SubType>Code</SubType>
     </Compile>
